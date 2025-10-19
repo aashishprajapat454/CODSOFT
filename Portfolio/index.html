@@ -4,36 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Aashish Prajapat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aashish Prjapat - Online Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Online Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>           
-            </ul>
-        </nav>
-    </header>
-    <section id="home">
-        <h1>home</h1>
-    </section>
-    <section id="about">
-        <h1>About</h1>
-    </section>
-    <section id="skills">
-        <h1>Skills</h1>
-    </section>
-    <section id="project">
-        <h1>Project</h1>
-    </section>
-    <section id="contact">
-        <h1>contact</h1>
-    </section>
-   <footer></footer>
+    <h1 class="logo">Online Portfolio</h1>
+    <nav class="nav" id="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  </header>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Aashish Prajapat</span></h1>
+    <p>
+      A passionate Web Developer focused on building clean, user-friendly,
+      and responsive websites.
+    </p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="assests/aashish.png" alt="Profile photo">
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="assests/Working.png" alt="Working photo">
+  </div>
+
+  <div class="about-content">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Aashish Prajapat</strong>, a creative and passionate web developer who loves turning ideas into visually appealing, functional, and user-friendly websites. I enjoy experimenting with new technologies and improving my skills with every project I build.
+    </p>
+
+    <a href="assests/Resume.pdf" class="btn" download>Download Resume</a>
+  </div>
+</section>
+<section class="skills" id="skills">
+  <h2>My Skills</h2>
+  <p class="skills-intro">
+    I balance technical expertise with strong interpersonal abilities to create meaningful digital experiences.
+  </p>
+
+  <div class="skills-columns">
+    <!-- Soft Skills -->
+    <div class="skills-box">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>🤝 Team Collaboration</li>
+        <li>🧩 Problem Solving</li>
+        <li>💬 Communication</li>
+        <li>🎯 Time Management</li>
+        <li>💡 Creativity</li>
+      </ul>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="skills-box">
+      <h3>Technical Skills</h3>
+
+      <div class="skill">
+        <h4>HTML</h4>
+        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <h4>CSS</h4>
+        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <h4>JavaScript</h4>
+        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <h4>React</h4>
+        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+      </div>
+
+      <div class="skill">
+        <h4>SQLite</h4>
+        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <p class="projects-intro">
+    A selection of my favorite work that showcases my skills in web design and development.
+  </p>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <img src="assests/portfolio.png" alt="Portfolio Project">
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>A personal website to showcase my skills, projects, and resume.</p>
+        <div class="project-links">
+          <a href="https://sandpsolutions.netlify.app/" class="btn">Live Demo</a>
+          <a href="https://github.com/aashishprajapat454/sandpsolutions" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="ageCalculator.png" alt="E-commerce Project">
+      <div class="project-info">
+        <h3>Age Calculator</h3>
+        <p>A responsive web app for calculate Age in Years, Months and Days</p>
+        <div class="project-links">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" alt="Weather App Project">
+      <div class="project-info">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using an external API with clean UI.</p>
+        <div class="project-links">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: you@example.com</p>
+</section>
+
+<footer>© 2025 Your Name</footer>
+
 </body>
+<script src="script.js"></script>
 </html>
