@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Aashish Prjapat - Online Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Aashish Prjapat - Online Portfolio</title>
 </head>
+
 <body>
-    <header>
+  <header>
     <h1 class="logo">Online Portfolio</h1>
     <nav class="nav" id="nav-menu">
-      <a href="#home">Home</a>
+      <a href="#hero">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -22,171 +26,238 @@
       ☰
     </div>
   </header>
-<section class="hero">
-  <div class="hero-content">
-    <h1>Hi, I'm <span>Aashish Prajapat</span></h1>
-    <p>
-      A passionate Web Developer focused on building clean, user-friendly,
-      and responsive websites.
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Aashish Prajapat</span></h1>
+      <p>
+        A passionate Web Developer focused on building clean, user-friendly,
+        and responsive websites.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="assests/aashish.png" alt="Profile photo">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-image">
+      <img src="assests/Working.png" alt="Working photo">
+    </div>
+
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>
+        I'm <strong>Aashish Prajapat</strong>, a creative and passionate web developer who loves turning ideas into
+        visually appealing, functional, and user-friendly websites. I enjoy experimenting with new technologies and
+        improving my skills with every project I build.
+      </p>
+
+      <a href="assests/Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <p class="skills-intro">
+      I balance technical expertise with strong interpersonal abilities to create meaningful digital experiences.
     </p>
-    <a href="#projects" class="btn">View My Work</a>
-  </div>
 
-  <div class="hero-image">
-    <img src="assests/aashish.png" alt="Profile photo">
-  </div>
-</section>
+    <div class="skills-columns">
+      <!-- Soft Skills -->
+      <div class="skills-box">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>🤝 Team Collaboration</li>
+          <li>🧩 Problem Solving</li>
+          <li>💬 Communication</li>
+          <li>🎯 Time Management</li>
+          <li>💡 Creativity</li>
+        </ul>
+      </div>
 
-<section class="about" id="about">
-  <div class="about-image">
-    <img src="assests/Working.png" alt="Working photo">
-  </div>
+      <!-- Technical Skills -->
+      <div class="skills-box">
+        <h3>Technical Skills</h3>
 
-  <div class="about-content">
-    <h2>About Me</h2>
-    <p>
-      I'm <strong>Aashish Prajapat</strong>, a creative and passionate web developer who loves turning ideas into visually appealing, functional, and user-friendly websites. I enjoy experimenting with new technologies and improving my skills with every project I build.
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h4>CSS</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h4>React</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <h4>SQLite</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 70%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <p class="projects-intro">
+      A selection of my favorite work that showcases my skills in web design and development.
     </p>
 
-    <a href="assests/Resume.pdf" class="btn" download>Download Resume</a>
-  </div>
-</section>
-<section class="skills" id="skills">
-  <h2>My Skills</h2>
-  <p class="skills-intro">
-    I balance technical expertise with strong interpersonal abilities to create meaningful digital experiences.
-  </p>
+    <div class="projects-container">
 
-  <div class="skills-columns">
-    <!-- Soft Skills -->
-    <div class="skills-box">
-      <h3>Soft Skills</h3>
-      <ul>
-        <li>🤝 Team Collaboration</li>
-        <li>🧩 Problem Solving</li>
-        <li>💬 Communication</li>
-        <li>🎯 Time Management</li>
-        <li>💡 Creativity</li>
-      </ul>
-    </div>
-
-    <!-- Technical Skills -->
-    <div class="skills-box">
-      <h3>Technical Skills</h3>
-
-      <div class="skill">
-        <h4>HTML</h4>
-        <div class="skill-bar"><div class="skill-progress" style="width: 95%;"></div></div>
-      </div>
-
-      <div class="skill">
-        <h4>CSS</h4>
-        <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
-      </div>
-
-      <div class="skill">
-        <h4>JavaScript</h4>
-        <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
-      </div>
-
-      <div class="skill">
-        <h4>React</h4>
-        <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
-      </div>
-
-      <div class="skill">
-        <h4>SQLite</h4>
-        <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="projects" id="projects">
-  <h2>My Projects</h2>
-  <p class="projects-intro">
-    A selection of my favorite work that showcases my skills in web design and development.
-  </p>
-
-  <div class="projects-container">
-
-    <div class="project-card">
-      <img src="assests/portfolio.png" alt="Portfolio Project">
-      <div class="project-info">
-        <h3>Portfolio Website</h3>
-        <p>A personal website to showcase my skills, projects, and resume.</p>
-        <div class="project-links">
-          <a href="https://sandpsolutions.netlify.app/" class="btn">Live Demo</a>
-          <a href="https://github.com/aashishprajapat454/sandpsolutions" class="btn-outline">GitHub</a>
+      <div class="project-card">
+        <img src="assests/portfolio.png" alt="Portfolio Project">
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A personal website to showcase my skills, projects, and resume.</p>
+          <div class="project-links">
+            <a href="https://sandpsolutions.netlify.app/" class="btn">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/sandpsolutions" class="btn-outline">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assests/ageCalculator.png" alt="Age Calculator Project">
-      <div class="project-info">
-        <h3>Age Calculator</h3>
-        <p>A responsive web app for calculate Age in Years, Months and Days</p>
-        <div class="project-links">
-          <a href="https://aashishprajapat454.github.io/WhatIsMyAge/" class="btn">Live Demo</a>
-          <a href="https://github.com/aashishprajapat454/WhatIsMyAge" class="btn-outline">GitHub</a>
+      <div class="project-card">
+        <img src="assests/ageCalculator.png" alt="Age Calculator Project">
+        <div class="project-info">
+          <h3>Age Calculator</h3>
+          <p>A responsive web app for calculate Age in Years, Months and Days</p>
+          <div class="project-links">
+            <a href="https://aashishprajapat454.github.io/WhatIsMyAge/" class="btn">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/WhatIsMyAge" class="btn-outline">GitHub</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="project-card">
-      <img src="assests/SilverGifts.png" alt="Weather App Project">
-      <div class="project-info">
-        <h3>Silver Gifts Website</h3>
-        <p>Display all silver gift items on website for batter visuals</p>
-        <div class="project-links">
-          <a href="https://silvergifts.netlify.app/" class="btn">Live Demo</a>
-          <a href="https://github.com/aashishprajapat454/silvergifts" class="btn-outline">GitHub</a>
+      <div class="project-card">
+        <img src="assests/SilverGifts.png" alt="Weather App Project">
+        <div class="project-info">
+          <h3>Silver Gifts Website</h3>
+          <p>Display all silver gift items on website for batter visuals</p>
+          <div class="project-links">
+            <a href="https://silvergifts.netlify.app/" class="btn">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/silvergifts" class="btn-outline">GitHub</a>
+          </div>
         </div>
       </div>
+
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">
+      I'd love to connect! Whether you want to discuss a project or just say hello,
+      feel free to reach out.
+    </p>
+
+    <div class="contact-container">
+
+      <!-- Social Media -->
+      <div class="contact-info">
+        <h3>Connect With Me</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/aashishprajapat/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/aashishprajapat454/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/Aashishprajpat" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/aashishprajapat454/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p><i class="fas fa-envelope"></i> aashishprajapat454@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +91 xxxxx 42350</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required>
+        <input type="email" name="from_email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <p id="form-status"></p>
+
+
+    </div>
+
+  </section>
+
+  <!-- Font Awesome (for social icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-logo">
+      <h2>Aashish<span> Dev</span></h2>
+      <p>Building ideas into reality with clean code and creative design.</p>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
 
   </div>
-</section>
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <p class="contact-intro">
-    I'd love to connect! Whether you want to discuss a project or just say hello,
-    feel free to reach out.
-  </p>
 
-  <div class="contact-container">
-
-    <!-- Social Media -->
-    <div class="contact-info">
-      <h3>Connect With Me</h3>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/aashishprajapat/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/aashishprajapat454/" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://x.com/Aashishprajpat" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://www.instagram.com/aashishprajapat454/" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p><i class="fas fa-envelope"></i> aashishprajapat454@gmail.com</p>
-      <p><i class="fas fa-phone"></i> +91 xxxxx 42350</p>
-    </div>
-
-    <!-- Contact Form -->
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-
+  <div class="footer-bottom">
+    <p>© 2025 Aashish Prajapat | All Rights Reserved</p>
   </div>
-</section>
+</footer>
 
-<!-- Font Awesome (for social icons) -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("2wiqu7HmxIq3741X_"); // 🔹 Replace with your EmailJS Public Key
+    })();
 
+    // Handle form submission
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-<footer>© 2025 Your Name</footer>
+      emailjs.sendForm("service_rn7f7z6", "template_moyqz7d", this)
+        .then(() => {
+          document.getElementById("form-status").textContent = "✅ Message sent successfully!";
+          document.getElementById("form-status").style.color = "#00bcd4";
+          this.reset();
+        }, (error) => {
+          document.getElementById("form-status").textContent = "❌ Failed to send. Try again later.";
+          document.getElementById("form-status").style.color = "red";
+        });
+    });
+  </script>
 
 </body>
 <script src="script.js"></script>
+
 </html>
