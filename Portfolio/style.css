@@ -11,7 +11,7 @@
 header{
     justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 nav{
     justify-content: space-between;
