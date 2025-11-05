@@ -1,5 +1,5 @@
 @import url("Assests/components.css");
-@import url("Assests/Responsive.css");
+@import url('Assests/Responsive.css');
 @import url('https://fonts.googleapis.com/css2?family=Antic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
@@ -7,16 +7,38 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
 }
-
-header{
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
+:root {
+  --primary-color: #00bcd4;
+  --hover-color: #0097a7;
+  --bg-dark: #0a0a0a;
 }
-nav{
-    justify-content: space-between;
+body{
+    max-width: 1440px;
+}
+header {
+  width: 100%;
+  background: var(--bg-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.logo h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 nav ul{
     list-style: none;
@@ -26,3 +48,13 @@ nav ul{
     align-items: center;
     padding: 10px 20px;    
 }
+.fa-download {
+    margin-right: 6px;
+}
+/* header .fa-bars {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+} */

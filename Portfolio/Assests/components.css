@@ -43,6 +43,12 @@ button:disabled {
   color: rgba(0, 0, 0, .3);
 }
 a{
-    color: black;
     text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+a:hover{
+      color: #00bcd4;
+
 }
