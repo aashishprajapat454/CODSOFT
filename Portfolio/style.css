@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 :root {
   --primary-color: #00bcd4;
@@ -19,6 +20,10 @@ header {
   width: 100%;
   background: var(--bg-dark);
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -51,10 +56,134 @@ nav ul{
 .fa-download {
     margin-right: 6px;
 }
-/* header .fa-bars {
+header .fa-bars {
   display: none;
   font-size: 1.8rem;
   color: #fff;
   cursor: pointer;
   margin-right: 20px;
-} */
+}
+/* css for home */
+
+/* ===== HOME SECTION ===== */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to bottom right, #0a0a0a, #121212);
+  color: #fff;
+  padding-top: 100px;
+  padding: 0 20px;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#home h1 span {
+  color: var(--primary-color);
+}
+
+#home p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  background: var(--primary-color);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .sec-button{
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.buttons button:hover {
+  background: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+.buttons button a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+ @media (max-width: 768px) {
+  nav {
+    padding: 18px 30px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #111;
+    width: 220px;
+    height: 100vh;
+    justify-content: start;
+      align-items: flex-start;
+    padding: 40px 25px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin-bottom: 25px;
+  }
+
+  nav button {
+    display: none;
+  }
+   header .fa-bars {
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  /* css for home */
+
+   #home h1 {
+    font-size: 2.2rem;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttons button {
+    width: 200px;
+  }
+}
+
+@media (min-width: 480px) {
+ 
+}
