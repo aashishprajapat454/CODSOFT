@@ -26,8 +26,9 @@ button {
   -webkit-user-select: none;
   vertical-align: middle;
 }
+
 button:hover,
-button:focus { 
+button:focus {
   background-color: var(--hover-color);
   color: #ffffff;
 }
@@ -37,18 +38,42 @@ button:active {
   color: rgb(255, 255, 255, .7);
 }
 
-button:disabled { 
+button:disabled {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
-a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-a:hover{
-      color: #00bcd4;
 
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #00bcd4;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+h3{
+  color: var(--primary-color);
+  font-size: 2rem;
 }

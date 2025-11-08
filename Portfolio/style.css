@@ -125,6 +125,164 @@ header .fa-bars {
   text-decoration: none;
   letter-spacing: 0.5px;
 }
+/* css for about */
+#about {
+  min-height: 100vh;
+  background: linear-gradient(to left top, #0a0a0a, #121212);;
+  color: #fff;
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+#about .content img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .content img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 25px rgba(0, 188, 212, 0.3);
+}
+
+#about .content p {
+  flex: 1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/* ===== SKILLS SECTION ===== */
+#skills {
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #fff;
+  padding: 100px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 60px;
+  position: relative;
+  text-align: center;
+}
+
+#skills h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1100px;
+}
+
+.skill-card {
+  background: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 188, 212, 0.25);
+}
+
+.skill-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-list span {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #ccc;
+  transition: all 0.3s ease;
+}
+
+.skill-list span:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: scale(1.05);
+}
+/* ===== SKILLS RESPONSIVE ===== */
+@media (max-width: 992px) {
+  #skills {
+    padding: 80px 8%;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #skills h2 {
+    font-size: 2rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-list span {
+    font-size: 0.9rem;
+    padding: 7px 12px;
+  }
+}
 
  @media (max-width: 768px) {
   nav {
