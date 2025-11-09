@@ -2,100 +2,169 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Assests/Responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
-        integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio Aashish Prajapat</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Assests/Responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css"
+    integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio Aashish Prajapat</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h3>Aashish Portfolio</h3>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button><a href="Assests/Resume1.pdf" download="Aashish Resume"><i class="fa-solid fa-download"></i>
-                    Download Resume</a></button>
-        </nav>
-        <i class="fa-solid fa-bars"></i>
-    </header>
-    <section id="home">
-        <h1>Hi, I'm <span>Aashish Prajapat</span></h1>
-        <p>Full Stack Developer</p>
-        <div class="buttons">
-            <button><a href="#projects">View My Work</a></button>
-            <button class="sec-button"><a href="#contact">Get In Touch</a></button>
+  <header>
+    <nav>
+      <div class="logo">
+        <h3>Aashish Portfolio</h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button><a href="Assests/Resume1.pdf" download="Aashish Resume"><i class="fa-solid fa-download"></i>
+          Download Resume</a></button>
+    </nav>
+    <i class="fa-solid fa-bars"></i>
+  </header>
+  <section id="home">
+    <h1>Hi, I'm <span>Aashish Prajapat</span></h1>
+    <p>Full Stack Developer</p>
+    <div class="buttons">
+      <button><a href="#projects">View My Work</a></button>
+      <button class="sec-button"><a href="#contact">Get In Touch</a></button>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+      <img src="Assests/About.jpg" alt="about">
+
+      <p>I’m Aashish Prajapat, a passionate Full-Stack Developer with a strong focus on building intuitive,
+        scalable, and visually engaging web applications. I enjoy turning complex ideas into seamless digital
+        experiences through clean code and thoughtful design.</p>
+      <p>My work blends creativity with logic — from crafting responsive front-ends to developing robust back-end
+        systems. I’m particularly interested in automation, AI-driven workflows, and fintech innovations like
+        UPI, where technology meets real-world impact.</p>
+
+    </div>
+  </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>Frontend Development</h3>
+        <div class="skill-list">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Bootstrap</span>
         </div>
-    </section>
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="content">
-            <img src="Assests/About.jpg" alt="about">
+      </div>
 
-            <p>I’m Aashish Prajapat, a passionate Full-Stack Developer with a strong focus on building intuitive,
-                scalable, and visually engaging web applications. I enjoy turning complex ideas into seamless digital
-                experiences through clean code and thoughtful design.</p>
-            <p>My work blends creativity with logic — from crafting responsive front-ends to developing robust back-end
-                systems. I’m particularly interested in automation, AI-driven workflows, and fintech innovations like
-                UPI, where technology meets real-world impact.</p>
+      <div class="skill-card">
+        <h3>Backend Development</h3>
+        <div class="skill-list">
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Tools & Others</h3>
+        <div class="skill-list">
+          <span>Git / GitHub</span>
+          <span>VS Code</span>
+          <span>Figma</span>
+          <span>Postman</span>
+          <span>Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+      <div class="project-card">
+        <div class="project-thumbnail">
+          <img src="Assests/project1.jpg" alt="Project 1">
+        </div>
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio showcasing my skills, projects, and experience. Built with clean UI and
+            smooth navigation.</p>
+          <div class="tech-stack">
+            <span>#HTML</span>
+            <span>#CSS</span>
+            <span>#JavaScript</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
+            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+          </div>
 
         </div>
-    </section>
-    <section id="skills">
-  <h2>My Skills</h2>
-  <div class="skills-container">
-    <div class="skill-card">
-      <h3>Frontend Development</h3>
-      <div class="skill-list">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Bootstrap</span>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumbnail">
+          <img src="Assests/project2.jpg" alt="Project 2">
+        </div>
+        <div class="project-info">
+          <h3>Age calculator</h3>
+          <p>A simple age calculator that quickly determines your exact age in years, months, and days from your date of
+            birth.
+          </p>
+          <div class="tech-stack">
+            <span>#React</span>
+            <span>#NodeJS</span>
+            <span>#MongoDB</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
+            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumbnail">
+          <img src="Assests/project3.jpg" alt="Project 3">
+        </div>
+        <div class="project-info">
+          <h3>Silver Gifts</h3>
+          <p>A custom dashboard that automates workflows using AI-driven scripts and backend scheduling.An elegant
+            silver gift website offering beautifully crafted silver items for every occasion — perfect for gifting,
+            celebrations, and memorable moments.
+          </p>
+          <div class="tech-stack">
+            <span>#Python</span>
+            <span>#Flask</span>
+            <span>#Automation</span>
+          </div>
+          <div class="project-buttons">
+            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
+            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+          </div>
+
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h3>Backend Development</h3>
-      <div class="skill-list">
-        <span>Node.js</span>
-        <span>Express.js</span>
-        <span>MongoDB</span>
-        <span>MySQL</span>
-        <span>REST APIs</span>
-      </div>
-    </div>
-
-    <div class="skill-card">
-      <h3>Tools & Others</h3>
-      <div class="skill-list">
-        <span>Git / GitHub</span>
-        <span>VS Code</span>
-        <span>Figma</span>
-        <span>Postman</span>
-        <span>Linux</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section id="projects">
-        <h1>projects</h1>
-    </section>
-    <section id="contact">
-        <h1>Contact</h1>
-    </section>
+  <section id="contact">
+    <h1>Contact</h1>
+  </section>
 
 </body>
 <script src="script.js"></script>
