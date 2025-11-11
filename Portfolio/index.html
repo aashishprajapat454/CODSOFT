@@ -10,6 +10,39 @@
     integrity="sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Portfolio Aashish Prajapat</title>
+ <!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init({
+      publicKey: "2wiqu7HmxIq3741X_", // ✅ Your Public Key
+    });
+  })();
+
+  window.onload = function () {
+    const form = document.getElementById("contact-form");
+
+    if (form) {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        emailjs.sendForm('service_rn7f7z6', 'template_moyqz7d', this)
+          .then(() => {
+            alert("Message sent successfully!");
+            form.reset();
+          })
+          .catch((error) => {
+            console.error("FAILED...", error);
+            alert("Message failed to send. Check console for details.");
+          });
+      });
+    } else {
+      console.error("Form not found — add id='contact-form' to your form element.");
+    }
+  };
+</script>
+
 </head>
 
 <body>
@@ -41,7 +74,7 @@
   <section id="about">
     <h2>About Me</h2>
     <div class="content">
-      <img src="Assests/About.jpg" alt="about">
+      <img src="Assests/aashish.png" alt="about">
 
       <p>I’m Aashish Prajapat, a passionate Full-Stack Developer with a strong focus on building intuitive,
         scalable, and visually engaging web applications. I enjoy turning complex ideas into seamless digital
@@ -53,7 +86,7 @@
     </div>
   </section>
   <section id="skills">
-    <h2>My Skills</h2>
+    <h2>Expertise</h2>
     <div class="skills-container">
       <div class="skill-card">
         <h3>Frontend Development</h3>
@@ -108,8 +141,8 @@
             <span>#JavaScript</span>
           </div>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
-            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/SatishSharma" class="btn github" target="_blank">GitHub</a>
+            <a href="https://satish-sharma.netlify.app/" class="btn live" target="_blank">Live Demo</a>
           </div>
 
         </div>
@@ -130,8 +163,9 @@
             <span>#MongoDB</span>
           </div>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
-            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/WhatIsMyAge.git" class="btn github"
+              target="_blank">GitHub</a>
+            <a href="https://agecalcultore.netlify.app/" class="btn live" target="_blank">Live Demo</a>
           </div>
 
         </div>
@@ -143,9 +177,9 @@
         </div>
         <div class="project-info">
           <h3>Silver Gifts</h3>
-          <p>A custom dashboard that automates workflows using AI-driven scripts and backend scheduling.An elegant
-            silver gift website offering beautifully crafted silver items for every occasion — perfect for gifting,
-            celebrations, and memorable moments.
+          <p>An elegant silver gift website offering beautifully crafted silver items for every occasion — perfect for
+            gifting, celebrations, and memorable moments.
+
           </p>
           <div class="tech-stack">
             <span>#Python</span>
@@ -153,8 +187,8 @@
             <span>#Automation</span>
           </div>
           <div class="project-buttons">
-            <a href="https://github.com/your-repo" class="btn github" target="_blank">GitHub</a>
-            <a href="https://your-live-demo.com" class="btn live" target="_blank">Live Demo</a>
+            <a href="https://github.com/aashishprajapat454/silvergifts" class="btn github" target="_blank">GitHub</a>
+            <a href="https://silvergifts.netlify.app/" class="btn live" target="_blank">Live Demo</a>
           </div>
 
         </div>
@@ -163,8 +197,79 @@
   </section>
 
   <section id="contact">
-    <h1>Contact</h1>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <h4>I'd like to hear from you!</h4>
+        <p>If you have any inquiries or just want to say hi, please use the contact form!</p>
+
+        <div class="email-link">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:aashishprajapat454@gmail.com">aashishprajapat454@gmail.com</a>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.instagram.com/aashishprajapat454/"><i class="fa-brands fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+          <a href="https://github.com/aashishprajapat454/"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aashishprajapat/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first_name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last_name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" value="Send">Send</button>
+      </form>
+    </div>
   </section>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Aashish Prajapat</h3>
+        <p>Full Stack Developer | Passion for clean code & creative design.</p>
+      </div>
+
+      <div class="footer-center">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/aashishprajapat454/"><i class="fa-brands fa-instagram"></i></a>
+          <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+          <a href="https://github.com/aashishprajapat454/"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aashishprajapat/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Aashish Prajapat. All rights reserved.</p>
+    </div>
+  </footer>
 
 </body>
 <script src="script.js"></script>
