@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY To-Do | Achieve Goals Smarter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="logo">MY To-Do</h1>
+        <nav class="nav">
+            <a href="#features">Features</a>
+            <a href="#beta">Join Beta</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Turn Big Goals into Simple Steps</h2>
+            <p>Plan smarter, stay focused, and achieve more — one task at a time.</p>
+            <button class="cta-btn" onclick="scrollToForm()">Join Beta Access</button>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Why MY To-Do?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Organize Goals</h3>
+                <p>Break down your big dreams into clear, manageable milestones.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Set Deadlines</h3>
+                <p>Keep your productivity high with smart reminders and time tracking.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Stay on Track</h3>
+                <p>Visual progress bars and daily focus views keep you motivated.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Test Form -->
+    <section id="beta" class="beta-section">
+        <h2>Apply for Beta Testing</h2>
+        <form id="betaForm">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Why do you want to join?" required></textarea>
+            <button type="submit">Apply Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="newsletter">
+            <h3>Subscribe for Updates</h3>
+            <form id="newsletterForm">
+                <input type="email" name="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <p>© 2025 MY To-Do. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("2wiqu7HmxIq3741X_"); // replace with your EmailJS public key
+        })();
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
